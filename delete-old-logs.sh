@@ -13,8 +13,9 @@ then
     echo -e "$R source diectory: $SOURCE_DIR doesnt exists. $N"
 fi
 
-FILES_TO_DELETE=$(find . -type f -mtime +5 -name"*.log")
+FILES_TO_DELETE=$(find $SOURCE_DIR -type f -mtime +5 -name"*.log")
 
 while IFS= read -r line
 do 
-     echo "Deleting file: 
+     echo "Deleting file: $line"
+done <<< $FILES_TO_DELETE
