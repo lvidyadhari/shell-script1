@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIR="/tmp/shellscript-logs"
+SOURCE_DIR="/tmp/shell-script-logs"
 
 ID=$(id -u)
 R="\e[31m"
